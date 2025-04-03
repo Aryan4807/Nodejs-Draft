@@ -1,4 +1,19 @@
 const fs=require('fs');
+// const ret=fs.writeFileSync('./test.txt','hi it is txt file')
+// console.log('aa',ret)
+
+
+fs.writeFile('./test1.txt','hi it is txt file',(err)=>{
+console.log('aa',err)
+})
+fs.readFileSync('./test.txt','utf-8')
+
+// let v=fs.appendFileSync('./test.txt',`${Date.now()}`)
+let v=fs.appendFileSync('./test.txt',`${Date.now()}`)
+console.log(v)
+fs.appendFileSync('./test.txt',`addad\n`)
+
+fs.unlinkSync('./test1.txt')
 // fs.writeFile("example.txt","Trial text in file",(err)=>{
 //     if(err){
 //         console.log('err',err);
