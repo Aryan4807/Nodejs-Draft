@@ -39,7 +39,7 @@ app.get("/",(req,res)=>{
 return res.send("Hello from homepage")
 })
 app.get("/about",(req,res)=>{
-    return res.send(`Hello from about ${req.query.name}`)
+    return res.send(`Hello from about ${req?.query?.name}|| ''`)
     })
 
  app.listen(8000,()=>{
